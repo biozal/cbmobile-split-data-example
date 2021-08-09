@@ -1,5 +1,13 @@
 # Example solution to the problem posted on [Stack Overflow](https://stackoverflow.com/questions/68708256/inserting-data-into-couchbase-lite-using-cblite-one-document-per-line-in-json-f/68715784).
 
+## Usage:
+Open Terminal or Bash prompt.
+
+```bash
+bash ./parsedata.sh
+```
+
+## Information
 This solution uses a bash shell script to do the following:
 
 - get the count of how many items are in the document
@@ -13,3 +21,15 @@ This solution uses a bash shell script to do the following:
 - call the cblite tool and have it create the document based on the id and json variables values
 
 This example is provided "as-is" with no support.
+
+## Other Notes
+
+The jq command is extremely flexible and you can use it to not only parse information from a file but from an URL request.  This solution assumes you have bash and a command line terminal availabe.  Windows users could achieve similar results with either [git bash](https://git-scm.com/download/win) or re-writing the script using [Powershell](https://devblogs.microsoft.com/scripting/playing-with-json-and-powershell/).  
+
+## Troubleshooting
+
+If the script says it doesn't have permissions to run you can make the script executable by running this command from the Terminal:
+
+```bash
+chmod 755 ./parsedata.sh
+```
