@@ -6,10 +6,6 @@
 - [cblite](https://github.com/couchbaselabs/couchbase-mobile-tools/releases) for your platform (included is the Mac OS X version)
 - terminal or console for your platform of choice
 
-## Version:
-This version is written using Mac OS X.  If you are using Windows or Linux you will need to replace the cblite version with the Windows or Linux version.  Those can be found here:
-https://github.com/couchbaselabs/couchbase-mobile-tools/releases
-
 ## Usage:
 Open Terminal or Bash prompt.
 
@@ -38,8 +34,12 @@ The jq command is extremely flexible and you can use it to not only parse inform
 
 ## Troubleshooting
 
-If the script says it doesn't have permissions to run you can make the script executable by running this command from the Terminal:
+This version is written using Mac OS X.  If you are using Windows or Linux you will need to replace the cblite version that is included with this repo with the Windows or Linux version.  Those can be found here:
+https://github.com/couchbaselabs/couchbase-mobile-tools/releases
+
+If the script says it doesn't have permissions to run the command you can make the script executable by running this command from the Terminal:
 
 ```bash
 chmod 755 ./parsedata.sh
 ```
+
