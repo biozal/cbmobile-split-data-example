@@ -1,4 +1,9 @@
-# Example solution to the problem posted on [Stack Overflow](https://stackoverflow.com/questions/68708256/inserting-data-into-couchbase-lite-using-cblite-one-document-per-line-in-json-f/68715784).
+# jq/cblite split data and import into starting database example
+
+## Description
+
+Example solution to the problem posted on [Stack Overflow](https://stackoverflow.com/questions/68708256/inserting-data-into-couchbase-lite-using-cblite-one-document-per-line-in-json-f/68715784).  In the problem a file was provided with `paging` data that is stored in an array and each item of the array should be a separate document.  To solve this a simple bash script was created using [jq](https://stedolan.github.io/jq/) to pull the information from the file and then use the [cblite](https://github.com/couchbaselabs/couchbase-mobile-tools/releases) command to insert the individual array elements into the database as separate documents.
+
 
 ## Requirements:
 - bash 
