@@ -1,5 +1,15 @@
 # Example solution to the problem posted on [Stack Overflow](https://stackoverflow.com/questions/68708256/inserting-data-into-couchbase-lite-using-cblite-one-document-per-line-in-json-f/68715784).
 
+## Requirements:
+- bash 
+- [jq](https://stedolan.github.io/jq/)
+- [cblite](https://github.com/couchbaselabs/couchbase-mobile-tools/releases) for your platform (included is the Mac OS X version)
+- terminal or console for your platform of choice
+
+## Version:
+This version is written using Mac OS X.  If you are using Windows or Linux you will need to replace the cblite version with the Windows or Linux version.  Those can be found here:
+https://github.com/couchbaselabs/couchbase-mobile-tools/releases
+
 ## Usage:
 Open Terminal or Bash prompt.
 
