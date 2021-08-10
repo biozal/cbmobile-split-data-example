@@ -25,9 +25,9 @@ This solution uses a bash shell script to do the following:
 
 - loop through the number of items I need to create documents for
 
-- uses the open source jq command (https://github.com/stedolan/jq) to get the content and save it into a variable named json
+- uses the open source [jq](https://stedolan.github.io/jq/) command to get the content and save it into a variable named json
 
-- a unique key is pulled from the id field from the object
+- a unique key is pulled from the id field from the object to be inserted as a new document
 
 - call the cblite tool and have it create the document based on the id and json variables values
 
@@ -39,7 +39,7 @@ The jq command is extremely flexible and you can use it to not only parse inform
 
 ## Troubleshooting
 
-This version is written using Mac OS X.  If you are using Windows or Linux you will need to replace the cblite version that is included with this repo with the Windows or Linux version.  Those can be found here:
+This version is written using **Mac OS**.  If you are using Windows or Linux you will need to replace the cblite version that is included with this repo with the Windows or Linux version.  Those can be found here:
 https://github.com/couchbaselabs/couchbase-mobile-tools/releases
 
 If the script says it doesn't have permissions to run the command you can make the script executable by running this command from the Terminal:
